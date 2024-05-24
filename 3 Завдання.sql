@@ -1,8 +1,8 @@
 USE CulinaryForum;
--- Різниця між Users і Recipes за user_id
-SELECT user_id, username
-FROM Users
-EXCEPT
-SELECT user_id, title
-FROM Recipes;
+GO
+
+-- Виконання з’єднання таблиць Recipe_Ingredients та Ingredients за ingredient_id
+SELECT *
+FROM Recipe_Ingredients
+INNER JOIN Ingredients ON Recipe_Ingredients.ingredient_id = Ingredients.ingredient_id;
 GO
