@@ -1,7 +1,7 @@
 USE CulinaryForum;
 GO
 
--- Об'єднання Users і Recipes за user_id
+-- РћР±'С”РґРЅР°РЅРЅСЏ Users С– Recipes Р·Р° user_id
 SELECT user_id, username AS name
 FROM Users
 UNION
