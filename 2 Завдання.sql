@@ -1,8 +1,10 @@
 USE CulinaryForum;
 GO
-
--- Вибір користувачів, які мають роль 'User' та зареєструвались після 2023-01-01
-SELECT username, email, created_at
+  
+-- Об'єднання Users і Recipes за user_id
+SELECT user_id, username AS name
 FROM Users
-WHERE role_id = 2 AND created_at > '2023-01-01';
+UNION
+SELECT user_id, title AS name
+FROM Recipes;
 GO
