@@ -1,5 +1,5 @@
 USE CulinaryForum;
--- Декартовий добуток Users і Recipes
+-- Р”РµРєР°СЂС‚РѕРІРёР№ РґРѕР±СѓС‚РѕРє Users С– Recipes
 SELECT * 
 FROM Users
 CROSS JOIN Recipes;
